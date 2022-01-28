@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container{
+  background: linear-gradient(307.47deg, #45108A 9.23%, #3D065F 66.85%, #200554 112.51%);
+  position: relative;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}

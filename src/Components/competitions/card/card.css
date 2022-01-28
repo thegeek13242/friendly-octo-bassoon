@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.home-competition-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 12px;
+  max-height: 24rem;
+  overflow: hidden;
+  font-family: "Work Sans";
+  color: #ffffff;
+}
+
+.image {
+  height: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-competition-card .content {
+  height: 50%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.27);
+}
+
+.home-competition-card .content .heading {
+  margin-bottom: 1.2rem;
+}
+
+.heading h2 {
+  font-weight: 500;
+}
+
+.home-competition-card a {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.home-competition-card .content .button-deadline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.deadline {
+  font-weight: 400;
+  color: rgba(229, 229, 229, 0.54);
+}
+
+.deadline p {
+  font-weight: 300;
+  color: rgba(229, 229, 229, 0.54);
+}
+
+.download {
+  margin-bottom: 0.5rem;
+}
+
+.download a {
+  color: #7f5cff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .home-competition-card .content .button-deadline {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 600px) {
+  .home-competition-card .content .button-deadline button {
+    height: 2.35rem;
+  }
+  .home-competition-card .content .button-deadline .deadline {
+    font-size: 0.84rem;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 794px) and (min-width: 600px) {
+  .home-competition-card {
+    min-height: 26rem;
+    max-height: 26rem;
+    min-width: 14.0625rem;
+  }
+  .home-competition-card .content .heading {
+    margin-bottom: 1.1rem;
+    font-size: 0.8rem;
+  }
+  .home-competition-card .button {
+    width: 56%;
+  }
+  .home-competition-card .content .button-deadline {
+    justify-content: space-around;
+    margin-bottom: 0.2rem;
+  }
+  .home-competition-card .content .button-deadline button {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-competition-card {
+    cursor: grab;
+    width: 250px;
+    min-height: 20rem;
+  }
+  .home-competition-card .content {
+    padding: 0.5rem;
+  }
+  .home-competition-card .content .button-deadline .deadline {
+    font-size: 0.84rem;
+    line-height: 1.2rem;
+  }
+  .home-competition-card .content .button-deadline {
+    margin-bottom: 2rem;
+  }
+   .home-competition-card .content .button-deadline button {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .home-competition-card .content .button-deadline button {
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: 1625px) {
+  .home-competition-card {
+    min-height: 28rem;
+  }
+  .heading h2 {
+    font-size: 2rem;
+  }
+  .deadline p {
+    font-size: 1.4rem;
+  }
+  .deadline {
+    font-size: 1.4rem;
+  }
+  .download {
+    font-size: 1.4rem;
+  }
+  .button-deadline .button {
+    width: 33%;
+  }
+  .button-deadline .deadline {
+    width: 63%;
+  }
+}
