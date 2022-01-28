@@ -9,13 +9,20 @@
 
 .competition-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   font-family: "Work Sans", sans-serif;
   margin-top: 3rem;
   margin-bottom: 3rem;
   color: #e5e5e5;
+}
+.competitions .header
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  color:#393086;
 }
 
 .competition-container .header {

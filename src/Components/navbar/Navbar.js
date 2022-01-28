@@ -4,20 +4,28 @@ import "./Navbar.css";
 const Navbar = () => {
 
   return (
+    <div className="parent-container">
     <div className="navbar-container">
       <nav className="navbar">
         <div className="nav-logo">
-          <div className="tfSvg">
+          <div className="iiitn-logo">
             <img
               src="/Assets/images/newLogo.png"
-              alt="tantrafiesta-logo"
+              alt="iiitn-logo"
             />
           </div>
+          <div className="nav-title">
           <div className="logo-text">
             <h1>Indian Institute of Information Technology, Nagpur</h1>
           </div>
-        </div>     
+          <div className="tagline">
+            <h2>An Institution of National Importance By An Act of Parliament</h2>
+          </div>
+          </div>
+        </div>   
       </nav>
+    </div>
+    <hr className="nav-divider" />  
     </div>
   );
 };

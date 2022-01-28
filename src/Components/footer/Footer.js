@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
 import { HashLink } from "react-router-hash-link";
-import { ReactComponent as Arrow } from "./assets/arrow.svg";
 import { ReactComponent as FacebookIcon } from "./assets/social/facebook.svg";
 import { ReactComponent as InstagramIcon } from "./assets/social/instagram.svg";
 import { ReactComponent as LinkedInIcon } from "./assets/social/linkedin.svg";
@@ -18,7 +17,7 @@ const Footer = () => {
             <h2>For Queries Contact</h2>
             <HashLink smooth to="/about#team">
               <p>
-                Event Co-ordinators <Arrow></Arrow>{" "}
+                Event Co-ordinators
               </p>
             </HashLink>
             <a href="mailto:tantrafiesta@iiitn.ac.in">
