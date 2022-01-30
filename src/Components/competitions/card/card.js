@@ -17,17 +17,13 @@ const Card = (props) => {
         </div>
         <div className="button-deadline">
           <div className="button">
-            <a href={competitionLink} target="_blank" >
+            <a href={competitionLink}>
               <Button
                 buttonSize="btn-register-size"
-                buttonStyle="btn-normal"
-                children="Register"
+                buttonStyle="btn-hero"
+                children="Login"
               ></Button>
             </a>
-          </div>
-          <div className="deadline">
-            Registration Ends On <br />
-            <p>{competitionDeadline}</p>
           </div>
         </div>
       </div>
