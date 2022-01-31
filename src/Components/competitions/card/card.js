@@ -1,8 +1,7 @@
 import React from "react";
 import "./card.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import Login from "../../auth/login";
 import Button from "../../button/Button";
 
 const Card = (props) => {
@@ -19,13 +18,14 @@ const Card = (props) => {
         </div>
         <div className="button-deadline">
           <div className="button">
-            <Link to={competitionLink}>
-              <Button
+            {/* <Link to={competitionLink}>
+               <Button
                 buttonSize="btn-register-size"
                 buttonStyle="btn-hero"
                 children="Login"
-              ></Button>
-            </Link>
+              ></Button> 
+            </Link> */}
+            <Login redirectUri={competitionLink}></Login>
           </div>
         </div>
       </div>
