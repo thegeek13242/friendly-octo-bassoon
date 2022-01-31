@@ -11,7 +11,7 @@ export default [
     competitionTitle: "Admin Portal",
     competitionDeadline: "16th Oct 12:00am IST",
     competitionLink:
-      "https://dare2compete.com/competition/hack-o-futurista-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-223255/",
+      "/admin",
     
   },
   {
@@ -20,7 +20,7 @@ export default [
     competitionTitle: "Student Portal",
     competitionDeadline: "17th Oct 06:00pm IST",
     competitionLink:
-      "https://dare2compete.com/hackathon/code-fiesta-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-223495/",
+      "/student",
     
   },
   {
@@ -29,7 +29,7 @@ export default [
     competitionTitle: "Guest Verification Portal",
     competitionDeadline: "16th Oct 12:00am IST",
     competitionLink:
-      "https://dare2compete.com/competition/design-a-thon-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-223462/",
+      "/guest",
     
   },
 ];

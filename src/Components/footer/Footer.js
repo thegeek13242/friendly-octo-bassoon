@@ -11,16 +11,17 @@ const Footer = () => {
           <div className="query">
             <h2>For Queries Contact</h2>
             <div className="email-id">
-            <a href="mailto:bt20cse214@iiitn.ac.in">
+            <a id="email" href="mailto:bt20cse214@iiitn.ac.in">
               <p>bt20cse214@iiitn.ac.in Aviral Verma</p>
             </a>
-            <a href="mailto:bt20cse209@iiitn.ac.in">
+          
+            <a id="email" href="mailto:bt20cse209@iiitn.ac.in">
               <p>bt20cse209@iiitn.ac.in Kshitij Agarkar</p>
             </a>
             </div>
           </div>
           <div className="copyright">
-            <p>&copy;Copyright 2021</p>
+            <p>&copy;Copyright 2022</p>
           </div>
         </div>
       </footer>
