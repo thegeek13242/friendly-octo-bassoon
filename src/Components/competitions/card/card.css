@@ -9,7 +9,8 @@
   overflow: hidden;
   font-family: "Work Sans";
   color: #ffffff;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .image {
@@ -130,12 +131,12 @@
   .home-competition-card .content .button-deadline {
     margin-bottom: 2rem;
   }
-   .home-competition-card .content .button-deadline button {
+  .home-competition-card .content .button-deadline button {
     width: 80px;
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .home-competition-card .content .button-deadline button {
     width: 110px;
   }

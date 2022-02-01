@@ -5,7 +5,13 @@ import Login from "../../auth/login";
 import Button from "../../button/Button";
 
 const Card = (props) => {
-  const { id, competitionImage, competitionTitle, competitionDeadline, competitionLink } = props;
+  const {
+    id,
+    competitionImage,
+    competitionTitle,
+    competitionDeadline,
+    competitionLink,
+  } = props;
 
   return (
     <div className="home-competition-card">

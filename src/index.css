@@ -1,15 +1,15 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html{
-    height: 100vh;
-    overflow-x: hidden;
-    overflow: auto;
+html {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow: auto;
 }
 
-body{
+body {
   height: 100%;
 }

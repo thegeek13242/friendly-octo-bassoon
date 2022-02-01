@@ -5,7 +5,6 @@ import { useFormik } from "formik";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 
-
 const Admin = () => {
   const [txnId, setTxnId] = useState("");
   return (
@@ -41,13 +40,13 @@ const Admin = () => {
             // error={formik.touched.password && Boolean(formik.errors.password)}
             // helperText={formik.touched.password && formik.errors.password}
           />
-          <Button 
-            color="primary" 
-            variant="contained" 
-            fullWidth type="submit"
-            sx={{ margin: "1rem",
-                  width: "10rem",
-                  marginLeft: "40%" }}>
+          <Button
+            color="primary"
+            variant="contained"
+            fullWidth
+            type="submit"
+            sx={{ margin: "1rem", width: "10rem", marginLeft: "40%" }}
+          >
             Submit
           </Button>
         </form>

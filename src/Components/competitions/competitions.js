@@ -9,17 +9,15 @@ import competitionData from "./competitionData";
 const Competitions = () => {
   return (
     <div className="competitions">
-      
-    <div className="header">
+      <div className="header">
         <h1>Secure Certificate Management System</h1>
-    </div>
-    <div className="competition-container">
+      </div>
+      <div className="competition-container">
         {competitionData.map((competition) => {
           return <Card key={competition.id} {...competition}></Card>;
         })}
+      </div>
     </div>
-    </div>
-
   );
 };
 

@@ -15,12 +15,12 @@ import { purple } from "@mui/material/colors";
 const mytheme = createTheme({
   palette: {
     primary: {
-      main: '#393086',
+      main: "#393086",
     },
     secondary: {
-      main: '#CF5924',
+      main: "#CF5924",
     },
-    darkGrey: '#484c54',
+    darkGrey: "#484c54",
   },
 });
 
@@ -35,12 +35,12 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 }));
 
 const StyledTableCellCGPA = styled(TableCell)(({ theme }) => ({
-    [`&.${tableCellClasses.body}`]: {
-      backgroundColor: mytheme.palette.darkGrey,
-      color: theme.palette.common.white,
-      fontSize: 20,
-    },
-  }));
+  [`&.${tableCellClasses.body}`]: {
+    backgroundColor: mytheme.palette.darkGrey,
+    color: theme.palette.common.white,
+    fontSize: 20,
+  },
+}));
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
@@ -100,23 +100,31 @@ const Student = () => {
                     </StyledTableRow>
                   ))}
                   <StyledTableRow>
-                      <StyledTableCellCGPA component="th" scope="row">
-                        <b>CGPA</b>
-                      </StyledTableCellCGPA>
-                      <StyledTableCellCGPA align="right">
-                        <b>$CGPA</b>
-                      </StyledTableCellCGPA>
-                    </StyledTableRow>
+                    <StyledTableCellCGPA component="th" scope="row">
+                      <b>CGPA</b>
+                    </StyledTableCellCGPA>
+                    <StyledTableCellCGPA align="right">
+                      <b>$CGPA</b>
+                    </StyledTableCellCGPA>
+                  </StyledTableRow>
                 </TableBody>
               </Table>
             </TableContainer>
           </div>
           <h3 className="dnHead">Downloads: </h3>
           <div className="downloads">
-            <Button sx={{"margin": "1rem", "width":"10rem", "marginLeft": "3rem"}} label="degree" variant="contained">
+            <Button
+              sx={{ margin: "1rem", width: "10rem", marginLeft: "3rem" }}
+              label="degree"
+              variant="contained"
+            >
               Degree
             </Button>
-            <Button sx={{"margin": "1rem", "width":"10rem"}} label="transcript" variant="contained">
+            <Button
+              sx={{ margin: "1rem", width: "10rem" }}
+              label="transcript"
+              variant="contained"
+            >
               Transcript
             </Button>
           </div>

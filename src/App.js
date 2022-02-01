@@ -24,20 +24,20 @@ const App = () => {
         <div className="app-container">
           <Navbar></Navbar>
           <div className="main-content">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/guest">
-              <Guest />
-            </Route>
-            <Route exact path="/admin">
-              <Admin />
-            </Route>
-            <Route exact path="/student">
-              <Student />
-            </Route>
-          </Switch>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/guest">
+                <Guest />
+              </Route>
+              <Route exact path="/admin">
+                <Admin />
+              </Route>
+              <Route exact path="/student">
+                <Student />
+              </Route>
+            </Switch>
           </div>
           <Footer />
         </div>

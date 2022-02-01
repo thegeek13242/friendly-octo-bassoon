@@ -10,26 +10,20 @@ export default [
     competitionImage: adminImg,
     competitionTitle: "Admin Portal",
     competitionDeadline: "16th Oct 12:00am IST",
-    competitionLink:
-      "/admin",
-    
+    competitionLink: "/admin",
   },
   {
     id: 2,
     competitionImage: studentImg,
     competitionTitle: "Student Portal",
     competitionDeadline: "17th Oct 06:00pm IST",
-    competitionLink:
-      "/student",
-    
+    competitionLink: "/student",
   },
   {
     id: 3,
     competitionImage: verifyImg,
     competitionTitle: "Guest Verification Portal",
     competitionDeadline: "16th Oct 12:00am IST",
-    competitionLink:
-      "/guest",
-    
+    competitionLink: "/guest",
   },
 ];
