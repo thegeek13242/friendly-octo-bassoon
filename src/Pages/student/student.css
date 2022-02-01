@@ -1,0 +1,27 @@
+.student-heading h1{
+    margin: 2rem;
+    color: #393086;
+}
+
+.student-container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameEnr{
+    margin: 2rem;
+}
+
+.dnHead{
+    margin-top: 2rem;
+    color: #393086;
+}
+
+.downloads{
+    display: flex;
+}

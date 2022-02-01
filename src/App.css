@@ -11,3 +11,7 @@
   -webkit-tap-highlight-color: transparent;
   height: 100%;
 }
+
+.main-content{
+  min-height: calc(100vh - 70px);
+}

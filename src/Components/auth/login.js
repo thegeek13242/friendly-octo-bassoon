@@ -18,7 +18,7 @@ function Login(props){
                 onSuccess={onSuccess}
                 onFailure={onFailure}
                 cookiePolicy={'single_host_origin'}
-                style={{"marginTop":"100px"}}
+                style={{"border-radius":"1rem"}}
                 isSignedIn={true}
                 uxMode="redirect"
                 redirectUri={process.env.REACT_APP_DOMAIN+props.redirectUri}
