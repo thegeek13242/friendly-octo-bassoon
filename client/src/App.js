@@ -19,18 +19,18 @@ const App = () => {
   }, []);
 
 
-  const user = false;
+  const user = true;
   return (
     <>
       <BrowserRouter>
         <div className="app-container">
-          <Navbar></Navbar>
+          <Navbar user={user}/>
           <div className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/guest" element={<Guest />} />
-              <Route path="/admin" element={<Admin />} />
-              <Route path="/student" element={<Student />} />
+              <Route path="/admin" element={user ? <Admin /> : <Navigate to="/" />} />
+              <Route path="/student" element={user ? <Student /> : <Navigate to="/" /> } />
             </Routes>
           </div>
           <Footer />

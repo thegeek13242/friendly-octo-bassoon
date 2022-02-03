@@ -43,6 +43,24 @@
   align-items: center;
 }
 
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.listItem {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .iiitn-logo img {
   /* width: 6.25rem; */
   width: 80px;
@@ -79,6 +97,10 @@
 
 .menu-title {
   display: none;
+}
+
+.loglink{
+  margin-left: 25rem;
 }
 
 /* 

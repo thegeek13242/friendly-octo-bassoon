@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({user}) => {
+  const logout = () => {
+    window.open("http://localhost:5000/auth/logout", "_self");
+  };
   return (
     <div className="parent-container">
       <div className="navbar-container">
@@ -22,7 +25,22 @@ const Navbar = () => {
                   An Institution of National Importance By An Act of Parliament
                 </h2>
               </div>
-            </div>
+            </div>{
+              user ? (
+                <ul className="list">
+                  <li className="listItem">
+                    <img 
+                      // src={user.photos[0].value}  
+                      style={{marginLeft:"15rem"}} 
+                      alt="UserAvatar" 
+                      className="avatar" />
+                  </li>
+                  <li style={{marginLeft:"2rem"}} className="listItem">Trial Name{/*user.displayName*/}</li>
+                  <li className="listItem" onClick={logout}></li>
+                </ul>
+              ) : (<Link className="loglink" to="/">Login</Link>)
+            }
+            
           </div>
         </nav>
       </div>
