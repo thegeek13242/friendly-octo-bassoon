@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
 
 // importing pages
@@ -18,30 +18,24 @@ const App = () => {
     Aos.init({ duration: 100 });
   }, []);
 
+
+  const user = false;
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <div className="app-container">
           <Navbar></Navbar>
           <div className="main-content">
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route exact path="/guest">
-                <Guest />
-              </Route>
-              <Route exact path="/admin">
-                <Admin />
-              </Route>
-              <Route exact path="/student">
-                <Student />
-              </Route>
-            </Switch>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/guest" element={<Guest />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="/student" element={<Student />} />
+            </Routes>
           </div>
           <Footer />
         </div>
-      </Router>
+      </BrowserRouter>
     </>
   );
 };

@@ -24,14 +24,14 @@ const Card = (props) => {
         </div>
         <div className="button-deadline">
           <div className="button">
-            {/* <Link to={competitionLink}>
+            <Link to={competitionLink}>
                <Button
                 buttonSize="btn-register-size"
                 buttonStyle="btn-hero"
                 children="Login"
               ></Button> 
-            </Link> */}
-            <Login redirectUri={competitionLink}></Login>
+            </Link>
+            {/* <Login redirectUri={competitionLink}></Login> */}
           </div>
         </div>
       </div>
