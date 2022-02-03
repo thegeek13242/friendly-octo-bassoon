@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
@@ -19,7 +19,31 @@ const App = () => {
   }, []);
 
 
-  const user = true;
+  const [user,setUser] = useState(null);
+  useEffect(()=>{
+    const getUser = async ()=>{
+      fetch("http://localhost:5000/auth/success",{
+        method: "GET",
+        credentials: "include",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Credentials": true,
+        },
+      }).then((response)=>{
+        if(response.status === 200) return response.json();
+        throw new Error("Authentication Failed!")
+      }).then(resObject=>{
+        setUser(resObject.user)
+      }).catch(err=>{
+        console.log(err);
+      });
+    };
+    getUser();
+  },[]);
+
+  console.log(user)
+
   return (
     <>
       <BrowserRouter>

@@ -30,13 +30,13 @@ const Navbar = ({user}) => {
                 <ul className="list">
                   <li className="listItem">
                     <img 
-                      // src={user.photos[0].value}  
+                      src={user.photos[0].value}  
                       style={{marginLeft:"15rem"}} 
                       alt="UserAvatar" 
                       className="avatar" />
                   </li>
-                  <li style={{marginLeft:"2rem"}} className="listItem">Trial Name{/*user.displayName*/}</li>
-                  <li className="listItem" onClick={logout}></li>
+                  <li style={{marginLeft:"2rem"}} className="listItem">{user.displayName}</li>
+                  <li style={{marginLeft:"2rem"}} className="listItem" onClick={logout}>Logout</li>
                 </ul>
               ) : (<Link className="loglink" to="/">Login</Link>)
             }

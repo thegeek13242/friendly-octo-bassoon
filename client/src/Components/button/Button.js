@@ -10,6 +10,10 @@ const SIZES = [
   "btn-join-now-size",
 ];
 
+const google = ()=>{
+  window.open("http://localhost:5000/auth/google","_self");
+}
+
 const Button = ({ children, onClick, buttonStyle, buttonSize }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
@@ -21,7 +25,7 @@ const Button = ({ children, onClick, buttonStyle, buttonSize }) => {
     <>
       <button
         className={`${checkButtonStyle} ${checkButtonSize}`}
-        onClick={onClick}
+        onClick={google}
       >
         {children}
       </button>
