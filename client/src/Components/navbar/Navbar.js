@@ -38,7 +38,7 @@ const Navbar = ({user}) => {
                   <li style={{marginLeft:"2rem"}} className="listItem">{user.displayName}</li>
                   <li style={{marginLeft:"2rem"}} className="listItem" onClick={logout}>Logout</li>
                 </ul>
-              ) : (<Link className="loglink" to="/">Login</Link>)
+              ) : (" ")
             }
             
           </div>

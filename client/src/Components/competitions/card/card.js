@@ -6,13 +6,15 @@ import Button from "../../button/Button";
 
 const Card = (props) => {
   const {
-    id,
     competitionImage,
     competitionTitle,
-    competitionDeadline,
     competitionLink,
   } = props;
 
+  const google = () =>{
+    window.open("http://localhost:5000/auth/google", "_self");
+  }
+  
   return (
     <div className="home-competition-card">
       <div className="image">
@@ -24,13 +26,13 @@ const Card = (props) => {
         </div>
         <div className="button-deadline">
           <div className="button">
-            <Link to={competitionLink}>
+            {/* <Link to={competitionLink}> */}
                <Button
                 buttonSize="btn-register-size"
                 buttonStyle="btn-hero"
                 children="Login"
               ></Button> 
-            </Link>
+            {/* </Link> */}
             {/* <Login redirectUri={competitionLink}></Login> */}
           </div>
         </div>
