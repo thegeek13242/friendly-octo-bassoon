@@ -1,24 +1,23 @@
 import React from "react";
-import "./competitions.css";
+import "./appusers.css";
 import Card from "./card/card";
-
-import competitionData from "./competitionData";
+import appusersData from "./appusersData"
 
 // import CarouselComponent from "../carousel/Carousel";
 
-const Competitions = () => {
+const AppUsers = () => {
   return (
     <div className="competitions">
       <div className="header">
         <h1>Secure Certificate Management System</h1>
       </div>
       <div className="competition-container">
-        {competitionData.map((competition) => {
-          return <Card key={competition.id} {...competition}></Card>;
+        {appusersData.map((appusers) => {
+          return <Card key={appusers.id} {...appusers}></Card>;
         })}
       </div>
     </div>
   );
 };
 
-export default Competitions;
+export default AppUsers;

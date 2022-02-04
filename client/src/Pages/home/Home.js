@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Home.css";
-import Competitions from "../../Components/competitions/competitions";
+import AppUsers from "../../Components/AppUsers/appusers";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div data-aos-duration="800" data-aos="fade-in">
-        <Competitions></Competitions>
+        <AppUsers></AppUsers>
       </div>
     </div>
   );
